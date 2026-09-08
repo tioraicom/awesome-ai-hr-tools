@@ -1,0 +1,150 @@
+name: Suggest a tool
+description: Propose a tool for the list
+title: "[Tool] "
+labels:
+  - suggestion
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thanks for the suggestion. Please check the README first — it may already be
+        listed under a different name, since products get renamed and acquired often.
+
+        Read [CONTRIBUTING.md](../blob/main/CONTRIBUTING.md) for what qualifies.
+
+  - type: input
+    id: name
+    attributes:
+      label: Tool name
+      description: Exactly as the product's own site writes it.
+      placeholder: BrightHire
+    validations:
+      required: true
+
+  - type: input
+    id: official-website
+    attributes:
+      label: Official website
+      description: >-
+        The product's own site. Not a review, a directory listing, a referral link, or a
+        URL shortener. No tracking parameters.
+      placeholder: https://brighthire.com/
+    validations:
+      required: true
+
+  - type: dropdown
+    id: category
+    attributes:
+      label: Suggested category
+      description: Pick the single best fit. One category per tool.
+      options:
+        - Job adverts and employer messaging
+        - Sourcing and candidate search
+        - Applicant tracking and hiring workflow
+        - Scheduling and candidate communication
+        - Interviews and work-sample assessment
+        - Onboarding and employee service
+        - Performance, feedback, and engagement
+        - Learning and skills
+        - Payroll, benefits, and global employment
+        - Workforce analytics and planning
+        - None of these fit
+    validations:
+      required: true
+
+  - type: textarea
+    id: description
+    attributes:
+      label: One-sentence description
+      description: >-
+        8 to 25 words. Say what it does and who would use it. Write it yourself — do not
+        paste the vendor's tagline. No superlatives.
+      placeholder: Records the interview so a hiring decision can be checked against what was said.
+    validations:
+      required: true
+
+  - type: dropdown
+    id: pricing
+    attributes:
+      label: Pricing
+      description: Up to two labels. Check the vendor's pricing page before answering.
+      multiple: true
+      options:
+        - Free
+        - Freemium
+        - Paid
+        - Open Source
+        - Free Trial
+    validations:
+      required: true
+
+  - type: dropdown
+    id: platform
+    attributes:
+      label: Platform
+      description: Only pick what you are sure about. Leave blank if you are guessing.
+      multiple: true
+      options:
+        - Web
+        - Windows
+        - macOS
+        - Linux
+        - iOS
+        - Android
+        - API
+        - CLI
+        - Browser Extension
+        - VS Code
+        - JetBrains
+        - Discord
+    validations:
+      required: false
+
+
+  - type: textarea
+    id: rationale
+    attributes:
+      label: Why it belongs on the list
+      description: >-
+        What does it do that the entries already in that category do not? Concrete beats
+        enthusiastic.
+    validations:
+      required: true
+
+  - type: dropdown
+    id: relationship
+    attributes:
+      label: Your relationship to this tool
+      description: >-
+        Disclosure is required. It will not count against the submission — undisclosed
+        promotion found later will.
+      options:
+        - No relationship
+        - I am a user
+        - I work with or for the company as an employee or contractor
+        - I represent the company as an agency, reseller, or marketer
+        - I am the founder or on the team
+    validations:
+      required: true
+
+  - type: checkboxes
+    id: checks
+    attributes:
+      label: Before submitting
+      options:
+        - label: I have provided the official website.
+          required: true
+        - label: I have opened the link and confirmed it is currently accessible.
+          required: true
+        - label: This is not an affiliate, referral, or tracking link.
+          required: true
+        - label: I searched the README for this name and domain and it is not already listed.
+          required: true
+
+  - type: textarea
+    id: notes
+    attributes:
+      label: Anything else
+      description: Optional.
+    validations:
+      required: false
