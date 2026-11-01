@@ -109,6 +109,8 @@ The first ninety days, and the questions an employee asks for years after.
 
 - **[AllVoices](https://www.allvoices.co/)** — Takes workplace reports anonymously and tracks each case to a recorded outcome. `Paid` `Web`
 - **[Enboarder](https://enboarder.com/)** — Sends the manager a prompt at the moment a new joiner needs something. `Paid` `Web` `iOS` `Android`
+- **[Kortix](https://kortix.com/)** — Runs HR agents from your own handbook and systems, drafting replies and holding anything about a person for a colleague to decide. `Open Source` `Web`
+
 - **[Leena AI](https://www.leena.ai/)** — Reads the company policy documents and answers from them rather than from a script. `Paid` `Web` `API`
 - **[Moveworks](https://www.moveworks.com/)** — Resolves the request inside the chat tool the employee already has open. `Paid` `Web` `API`
 
